@@ -1,0 +1,233 @@
+.footer {
+  background: var(--bg-tertiary);
+  padding: 4rem 2rem 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.brandSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.logo {
+    height: 200px;
+    width: 450px;
+}
+
+.brandDescription {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 400px;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  width: 44px;
+  height: 44px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.socialLink:hover {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.linksSection h3,
+.contactSection h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+}
+
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.linksSection a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.linksSection a:hover {
+  color: var(--accent-primary);
+  transform: translateX(5px);
+}
+
+.contactSection p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px var(--accent-primary-transparent);
+}
+
+.contactForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contactForm button {
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  padding: 0.875rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  min-height: 44px;
+}
+
+.contactForm button:hover {
+  background: var(--accent-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(199, 117, 41, 0.3);
+}
+
+.successMessage {
+  color: var(--accent-primary);
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0;
+  font-weight: 600;
+}
+
+.errorMessage {
+  color: var(--accent-secondary);
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0;
+  font-weight: 600;
+}
+
+.paymentInfo {
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.paymentInfo p {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright,
+.credits {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.credits a {
+  color: var(--accent-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.credits a:hover {
+  color: var(--accent-primary-dark);
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .contactSection {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

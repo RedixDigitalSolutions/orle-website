@@ -1,0 +1,311 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  background: var(--bg-primary-transparent);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo a:hover img {
+  transform: scale(1.05);
+}
+
+.searchBar {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  background: var(--bg-secondary);
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.searchBar:focus-within {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px var(--accent-primary-transparent);
+}
+
+.searchBar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.searchBar input::placeholder {
+  color: var(--text-secondary);
+}
+
+.searchBar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.searchBar button:hover {
+  transform: scale(1.1);
+}
+
+.searchIcon {
+  font-size: 1.2rem;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-primary);
+  transition: width 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: var(--accent-primary);
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.themeToggle,
+.cartButton {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.themeToggle:hover,
+.cartButton:hover {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.cartButton {
+  position: relative;
+}
+
+.cartIcon {
+  font-size: 1.3rem;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: var(--accent-secondary);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.mobileMenuToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: var(--text-primary);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
+
+.mobileMenu {
+  display: none;
+  padding: 1rem 2rem 2rem;
+  border-top: 1px solid var(--border-color);
+  animation: slideDown 0.3s ease;
+}
+
+.mobileSearch {
+  margin-bottom: 1rem;
+}
+
+.mobileSearch input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileMenu li {
+  margin-bottom: 0.5rem;
+}
+
+.mobileMenu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.mobileMenu a:hover {
+  background: var(--bg-secondary);
+  color: var(--accent-primary);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .navLinks {
+    display: none;
+  }
+  
+  .searchBar {
+    display: none;
+  }
+  
+  .mobileMenuToggle {
+    display: block;
+  }
+  
+  .mobileMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+  }
+  
+  .logo img {
+    height: 35px;
+  }
+  
+  .actions {
+    gap: 0.5rem;
+  }
+  
+  .themeToggle,
+  .cartButton {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+}

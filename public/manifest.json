@@ -1,0 +1,20 @@
+{
+  "short_name": "ORLE",
+  "name": "ORLE Men's Skincare",
+  "icons": [
+    {
+      "src": "orle logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "orle logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#b8860b",
+  "background_color": "#0a0a0a"
+}
