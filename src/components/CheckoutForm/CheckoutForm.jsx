@@ -86,7 +86,7 @@ const CheckoutForm = ({ isOpen, onClose }) => {
         city: formData.city,
         address: formData.address,
         email: formData.email,
-        cartItems: cartItemsFormatted,  // Now it's readable: "Product 1 (x2), Product 2 (x1)"
+        cartItems: cartItemsFormatted,  // Now it's readable: "product-1 (x2), product-2 (x1)"
         subtotal: subtotal,
         shipping: shipping,
         total: total
