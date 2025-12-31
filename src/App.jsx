@@ -32,26 +32,20 @@ const AppContent = () => {
   };
 
   return (
-    <Router>
+    <Router basename="/orle-website">
       <div className={styles.app}>
         <Navbar onCartOpen={handleOpenCart} />
-        
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/product/:id" element={<ProductDetails />} />
-          </Routes>
-        </main>
-
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+        </Routes>
         <Footer />
-
-        <Cart
-          isOpen={isCartOpen}
+        <Cart 
+          isOpen={isCartOpen} 
           onClose={handleCloseCart}
           onCheckout={handleOpenCheckout}
         />
-
-        <CheckoutForm
+        <CheckoutForm 
           isOpen={isCheckoutOpen}
           onClose={handleCloseCheckout}
         />
