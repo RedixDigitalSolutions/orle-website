@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.80c050d2.css",
-    "main.js": "/static/js/main.94326d9c.js",
-    "index.html": "/index.html",
-    "main.80c050d2.css.map": "/static/css/main.80c050d2.css.map",
-    "main.94326d9c.js.map": "/static/js/main.94326d9c.js.map"
+    "main.css": "/orle-website/static/css/main.80c050d2.css",
+    "main.js": "/orle-website/static/js/main.94326d9c.js",
+    "index.html": "/orle-website/index.html",
+    "main.80c050d2.css.map": "/orle-website/static/css/main.80c050d2.css.map",
+    "main.94326d9c.js.map": "/orle-website/static/js/main.94326d9c.js.map"
   },
   "entrypoints": [
     "static/css/main.80c050d2.css",
