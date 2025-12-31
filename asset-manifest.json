@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/orle-website/static/css/main.80c050d2.css",
-    "main.js": "/orle-website/static/js/main.94326d9c.js",
+    "main.js": "/orle-website/static/js/main.4f1410a1.js",
     "index.html": "/orle-website/index.html",
     "main.80c050d2.css.map": "/orle-website/static/css/main.80c050d2.css.map",
-    "main.94326d9c.js.map": "/orle-website/static/js/main.94326d9c.js.map"
+    "main.4f1410a1.js.map": "/orle-website/static/js/main.4f1410a1.js.map"
   },
   "entrypoints": [
     "static/css/main.80c050d2.css",
-    "static/js/main.94326d9c.js"
+    "static/js/main.4f1410a1.js"
   ]
 }
