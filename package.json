@@ -2,6 +2,7 @@
   "name": "orle-skincare",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://redixdigitalsolutions.github.io/orle-website",
   "description": "Premium men's skincare e-commerce website",
   "dependencies": {
     "dotenv": "^17.2.3",
@@ -13,7 +14,6 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "homepage": "https://redixdigitalsolutions.github.io/orle-website",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
