@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/',
   plugins: [react()],
   build: {
-    outDir: 'build'
+    outDir: 'dist'  // Changed from 'build' to 'dist'
   },
   esbuild: {
     loader: 'jsx',
