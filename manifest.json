@@ -3,12 +3,12 @@
   "name": "ORLE Men's Skincare",
   "icons": [
     {
-      "src": "orle logo.png",
+      "src": "%PUBLIC_URL%/orle logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "orle logo.png",
+      "src": "%PUBLIC_URL%/orle logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
