@@ -40,10 +40,10 @@ export const products = [
     ],
     howToUse: "Apply an even layer to clean, dry skin. Massage gently until fully absorbed. Use morning and evening.",
 images: [
-  "./product-1/5321c6e261786b63516f5ab5b4c153ceeff66113f7f4eaa52c378d9e5b404565_lg.webp",
-  "./product-1/7cb1b4404be5df6181f598982b717f2400e0f68706d12721ef3def9d548ea095_lg.webp",
-  "./product-1/7ccba30e83a73740d74d4d9327820ee1967f8d02ddd2ec919426b210e5046b66_lg.webp",
-  "./product-1/9407c2977cb0b3d25598761856673853644ef80db96f4d828a3649568b137632_lg.webp"
+  "/product-1/5321c6e261786b63516f5ab5b4c153ceeff66113f7f4eaa52c378d9e5b404565_lg.webp",
+  "/product-1/7cb1b4404be5df6181f598982b717f2400e0f68706d12721ef3def9d548ea095_lg.webp",
+  "/product-1/7ccba30e83a73740d74d4d9327820ee1967f8d02ddd2ec919426b210e5046b66_lg.webp",
+  "/product-1/9407c2977cb0b3d25598761856673853644ef80db96f4d828a3649568b137632_lg.webp"
 ],
     stock: true
   },
@@ -88,8 +88,8 @@ images: [
     ],
     howToUse: "Apply to damp skin. Massage gently in circular motions, avoiding the eye area. Rinse thoroughly with lukewarm water. Use morning and evening as the first step of your routine.",
     images: [
-      "./product-2/577e9648da4fc6545a9a0521999454811da157e534c0b1c439c67789d27a02ab_lg.webp",
-      "./product-2/87a7177559f80c0756d917149c72e667de44e3ab4fbd96d1676ae2d7236fe8ab_lg.webp"
+      "/product-2/577e9648da4fc6545a9a0521999454811da157e534c0b1c439c67789d27a02ab_lg.webp",
+      "/product-2/87a7177559f80c0756d917149c72e667de44e3ab4fbd96d1676ae2d7236fe8ab_lg.webp"
     ],
     stock: true
   },
@@ -121,9 +121,9 @@ images: [
     ],
     howToUse: "Step 1: Cleanse with Essential Cleansing Gel. Step 2: Hydrate with Essential Moisturizing Cream. Use morning and evening.",
     images: [
-      "./product-3/577e9648da4fc6545a9a0521999454811da157e534c0b1c439c67789d27a02ab_lg.webp",
-      "./product-3/9407c2977cb0b3d25598761856673853644ef80db96f4d828a3649568b137632_lg.webp",
-      "./product-3/d43f646db0d13a17bdbad6c9098c9e45b39b415d3bccf1c20f2712fad9814b94_lg.webp"
+      "/product-3/577e9648da4fc6545a9a0521999454811da157e534c0b1c439c67789d27a02ab_lg.webp",
+      "/product-3/9407c2977cb0b3d25598761856673853644ef80db96f4d828a3649568b137632_lg.webp",
+      "/product-3/d43f646db0d13a17bdbad6c9098c9e45b39b415d3bccf1c20f2712fad9814b94_lg.webp"
     ],
     stock: true,
     packContents: [

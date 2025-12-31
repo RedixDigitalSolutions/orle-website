@@ -32,25 +32,24 @@ const AppContent = () => {
   };
 
   return (
-    <Router basename="/orle-website">
-      <div className={styles.app}>
-        <Navbar onCartOpen={handleOpenCart} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
-        </Routes>
-        <Footer />
-        <Cart 
-          isOpen={isCartOpen} 
-          onClose={handleCloseCart}
-          onCheckout={handleOpenCheckout}
-        />
-        <CheckoutForm 
-          isOpen={isCheckoutOpen}
-          onClose={handleCloseCheckout}
-        />
-      </div>
-    </Router>
+    <div className={styles.app}>
+      <Navbar onCartOpen={handleOpenCart} />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+      </Routes>
+      <Footer />
+      <Cart 
+        isOpen={isCartOpen} 
+        onClose={handleCloseCart}
+        onCheckout={handleOpenCheckout}
+      />
+      <CheckoutForm
+        isOpen={isCheckoutOpen}
+        onClose={handleCloseCheckout}
+      />
+    </div>
   );
 };
 
@@ -58,7 +57,9 @@ function App() {
   return (
     <ThemeProvider>
       <CartProvider>
-        <AppContent />
+        <Router>
+          <AppContent />
+        </Router>
       </CartProvider>
     </ThemeProvider>
   );

@@ -2,11 +2,11 @@ export const siteContent = {
   brand: {
     name: "ORLE",
     tagline: "Simple & Effective Skin Care For Men",
-    logo: "./orle-logo.png",  
+    logo: "/orle-logo.png",  
     description: "Premium men's skincare designed for simplicity, performance, and results."
   },
   hero: {
-    video: "./video/banner-video.mov",  // Changed from "/video/banner-video.mov"
+    video: "/video/banner-video.mov",  
     heading: "Simple & Effective Skin Care For Men",
     subheading: "Premium formulas. Real results. Zero complexity.",
     cta: "Shop Now"

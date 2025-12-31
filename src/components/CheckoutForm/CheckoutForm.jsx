@@ -74,7 +74,8 @@ const CheckoutForm = ({ isOpen, onClose }) => {
   ).join(', ');
 
   try {
-    await fetch(process.env.REACT_APP_GOOGLE_SHEETS_URL, {
+await fetch(import.meta.env.VITE_GOOGLE_SHEETS_URL, {
+
       method: 'POST',
       mode: 'no-cors',
       headers: {
