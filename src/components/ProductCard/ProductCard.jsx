@@ -7,7 +7,7 @@ const ProductCard = ({ product, onQuickView, onAddToCart }) => {
   const discount = calculateDiscount(product.price, product.salePrice);
 
   const handleImageError = (e) => {
-    e.target.src = '/orle logo.png';
+    e.target.src = '/orle-logo.png';
   };
 
   return (

@@ -2,7 +2,7 @@ export const siteContent = {
   brand: {
     name: "ORLE",
     tagline: "Simple & Effective Skin Care For Men",
-    logo: "./orle logo.png",  // Changed from "/orle logo.png"
+    logo: "./orle-logo.png",  
     description: "Premium men's skincare designed for simplicity, performance, and results."
   },
   hero: {
